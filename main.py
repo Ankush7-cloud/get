@@ -66,9 +66,9 @@ if st.session_state["username"]:
 else:
   menu = st.sidebar.selectbox("Menu", ["Home", "Signup", "Login"])
 
-    if menu == "Home":
-      home()
-    elif menu == "Signup":
-      signup()
-    elif menu == "Login":
-      login()
+   if menu == "Home":
+     home()
+   elif menu == "Signup":
+     signup()
+   elif menu == "Login":
+     login()
