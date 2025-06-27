@@ -21,7 +21,7 @@ if "username" not in st.session_state:
 # Logout functionality
 if st.session_state["username"]:
   st.sidebar.markdown(f"👤 Logged in as: {st.session_state.username}")
-    if st.sidebar.button("Logout"):
+  if st.sidebar.button("Logout"):
       st.session_state.clear()
       st.experimental_rerun()
 
@@ -29,8 +29,8 @@ if st.session_state["username"]:
 if st.session_state["username"]:
   role = st.session_state["role"]
 
-    if role == "admin":
-      menu = st.sidebar.selectbox("Admin Menu", [
+  if role == "admin":
+    menu = st.sidebar.selectbox("Admin Menu", [
             "Dashboard",
             "Insert Device",
             "Delete Device",
