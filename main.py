@@ -63,7 +63,7 @@ if st.session_state["username"]:
 
 # Unauthenticated users
 else:
-menu = st.sidebar.selectbox("Menu", ["Home", "Signup", "Login"])
+  menu = st.sidebar.selectbox("Menu", ["Home", "Signup", "Login"])
 
     if menu == "Home":
      home()
