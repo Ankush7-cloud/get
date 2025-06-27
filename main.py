@@ -38,7 +38,6 @@ if st.session_state["username"]:
             "User Management",
             "Resource Management"
         ])
-
         if menu == "Dashboard":
           admin_dashboard()
         elif menu == "Insert Device":
@@ -52,8 +51,8 @@ if st.session_state["username"]:
         elif menu == "Resource Management":
           resource_management()
 
-    elif role == "user":
-      menu = st.sidebar.selectbox("User Menu", [
+  elif role == "user":
+    menu = st.sidebar.selectbox("User Menu", [
             "User Management",
             "Resource Management"
         ])
@@ -66,9 +65,9 @@ if st.session_state["username"]:
 else:
 menu = st.sidebar.selectbox("Menu", ["Home", "Signup", "Login"])
 
-   if menu == "Home":
+    if menu == "Home":
      home()
    elif menu == "Signup":
-signup()
+     signup()
    elif menu == "Login":
-login()
+     login()
